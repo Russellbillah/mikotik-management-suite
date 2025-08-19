@@ -1,5 +1,6 @@
 # MikroTik Management Suite (Complete)
-
+###create a folder named public and place index.html, style.css and ui.js there.
+Rest the files remain as it is. Thanks
 A complete, self-hosted management console for MikroTik RouterOS.
 
 ## Highlights
