@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>MikroTik Management Suite (Complete)</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div><strong>MikroTik Suite</strong></div>
+    <div id="userbar" class="row"></div>
+  </header>
+  <div class="container">
+    <aside>
+      <div class="card">
+        <div class="row">
+          <select id="routerSelect"></select>
+          <button id="addRouterBtn">Add</button>
+        </div>
+        <div class="row" style="margin-top:6px">
+          <button id="deleteRouterBtn">Delete</button>
+          <button id="backupBtn">Backup</button>
+        </div>
+      </div>
+      <nav class="card">
+        <div class="link" data-page="dashboard">Dashboard</div>
+        <div class="link" data-page="interfaces">Interfaces</div>
+        <div class="link" data-page="ip">IP Addresses</div>
+        <div class="link" data-page="firewall">Firewall</div>
+        <div class="link" data-page="nat">NAT</div>
+        <div class="link" data-page="vlan">VLAN / Bridge</div>
+        <div class="link" data-page="queues">Queues</div>
+        <div class="link" data-page="dhcp">DHCP Leases</div>
+        <div class="link" data-page="hotspot">Hotspot Users</div>
+        <div class="link" data-page="capsman">CAPsMAN</div>
+        <div class="link" data-page="scripts">Scripts</div>
+        <div class="link" data-page="config">Config Export</div>
+        <div class="link" data-page="backups">Backups</div>
+        <hr/>
+        <div class="link" data-page="admin">Admin (RBAC)</div>
+      </nav>
+    </aside>
+    <main id="page"></main>
+  </div>
+  <script src="ui.js"></script>
+</body>
+</html>
